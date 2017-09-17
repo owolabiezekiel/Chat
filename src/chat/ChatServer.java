@@ -42,10 +42,13 @@ public class ChatServer extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jToolBar1 = new javax.swing.JToolBar();
         jScrollPane1 = new javax.swing.JScrollPane();
         msgArea = new javax.swing.JTextArea();
         msgText = new javax.swing.JTextField();
         serverSend = new javax.swing.JButton();
+
+        jToolBar1.setRollover(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -156,6 +159,7 @@ public class ChatServer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToolBar jToolBar1;
     private static javax.swing.JTextArea msgArea;
     private javax.swing.JTextField msgText;
     private javax.swing.JButton serverSend;
