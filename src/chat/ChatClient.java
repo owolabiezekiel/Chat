@@ -8,6 +8,7 @@ package chat;
 import java.awt.Color;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.Socket;
 import java.time.LocalDateTime;
 /**
@@ -95,9 +96,10 @@ public class ChatClient extends javax.swing.JFrame {
             String me = "Me:\t";
             msgOut += msgText.getText().trim();
             dout.writeUTF(msgOut);
+            dout.flush();
             msgArea.setText(msgArea.getText() + "\n" + (me + msgOut));
             msgText.setText("");
-        } catch(Exception e) {
+        } catch(IOException e) {
             // exception handling code here
         }
     }//GEN-LAST:event_clientSendActionPerformed
